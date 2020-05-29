@@ -23,7 +23,7 @@ SERVER_IP = "192.168.2.10"
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(-72_e92e4b8havsc&hr1us#9#6jed&213145b5z!h@+tqo^%u+u20(k'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
