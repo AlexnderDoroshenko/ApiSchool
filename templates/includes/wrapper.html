@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UPITEC School REST API version1</title>
+</head>
+<body style="background: #fffff">
+<div class="header" style="background: #aae2b1">
+    <div class="parent" style="background: #ffffd">
+        <div class="child" align="left">
+            <a href="{% url 'customers:index' %}" class="btn btn-primary btn-lg">HOME&raquo;</a>
+            <hr>
+            <p>Добро пожаловать в учебный сервер школы UPITec !!!</p>
+            <hr>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="container" style="background: #83d48e">
+
+          {% block content %}
+
+          {% endblock %}
+
+</div>
+
+</body>
+<footer>
+    <div class="container">
+        <hr>
+          <div class="parent">
+            <div class="child">
+                <p align="left">&copy; All rights reserved 2020</p>
+                <hr>
+                <a href="https://www.djangoproject.com/" align="right">Powered by Django</a>
+            </div>
+          </div>
+    </div>
+
+</footer>
+</html>

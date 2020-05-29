@@ -1,0 +1,16 @@
+{% extends "includes/wrapper.html" %}
+{% block content %}
+<div class="container">
+</div>
+<div class="container">
+    <hr>
+    <div>
+        <a href="{% url 'customers:resources' %}">Описание ресурсов</a>
+    </div>
+    <hr>
+    <div>
+        <a href="{% url 'customers:methods' %}">Описание методов</a>
+    </div>
+    <hr>
+</div>
+{% endblock %}

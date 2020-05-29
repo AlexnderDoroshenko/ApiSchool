@@ -1,0 +1,102 @@
+{% extends "includes/wrapper.html" %}
+{% block content %}
+<div class="container">
+    <div>
+        <h1>Здесь расположено описание доступных ресурсов.</h1>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/api-token-auth/</h2>
+        <a href="{% url 'customers:index' %}api-token-auth/">Получение токена JWT</a>
+        <p>Данный ресурс предназначен для получения токена JWT</p>
+        <p>Использует методы POST, OPTIONS</p>
+        <p>В теле запроса нужно передавать следующие параметры :</p>
+        <p>{
+            "username": "",
+            "password": ""
+        }</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/client/create/</h2>
+        <a href="{% url 'customers:index' %}client/create/">Создание записи о клиенте</a>
+        <p>Данный ресурс предназначен для создания записи о клиенте</p>
+        <p>Использует методы POST, OPTIONS</p>
+        <p>В теле запроса нужно передавать следующие параметры :</p>
+        <p>{
+            "id": null,
+            "name": "",
+            "last_name": "",
+            "sex": null,
+            "type": null
+        }</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/client/details/id</h2>
+        <p>Данный ресурс предназначен для редактирования записей о клиенте</p>
+        <p>Использует методы GET, PUT, PATCH, DELETE, HEAD, OPTIONS</p>
+        <p>В адресе передаем Id нужного нам клиента - значение числовое</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/store/create/</h2>
+        <a href="{% url 'customers:index' %}store/create/">Создание записи о магазине</a>
+        <p>Данный ресурс предназначен для создания записи о магазине</p>
+        <p>Использует методы POST, OPTIONS</p>
+        <p>В теле запроса нужно передавать следующие параметры :</p>
+        <p>{
+            "store_id": null,
+            "store_name": "",
+            "store_description": "",
+            "store_type": null
+        }</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/store/details/id</h2>
+        <p>Данный ресурс предназначен для редактирования записей о магазине</p>
+        <p>Использует методы GET, PUT, PATCH, DELETE, HEAD, OPTIONS</p>
+        <p>В адресе передаем Id нужного нам магазина - значение числовое</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/poi/create/</h2>
+        <a href="{% url 'customers:index' %}poi/create/">Создание записи о касcе</a>
+        <p>Данный ресурс предназначен для создания записи о кассе</p>
+        <p>Использует методы POST, OPTIONS</p>
+        <p>В теле запроса нужно передавать следующие параметры :</p>
+        <p>
+            {
+                "poi_id": null,
+                "net_number": null,
+                "store_number": null
+            }
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/poi/details/id</h2>
+        <p>Данный ресурс предназначен для редактирования записей о кассе</p>
+        <p>Использует методы GET, PUT, PATCH, DELETE, HEAD, OPTIONS</p>
+        <p>В адресе передаем Id нужной нам кассы - значение числовое</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/upload/</h2>
+        <p>Данный ресурс предназначен для сохранения файла в хранилище.</p>
+        <p>В хедере передаем тип контента multipart/form-data</p>
+        <p>Использует методы POST, OPTIONS</p>
+        <p>В body передаем file - файл и remark - строка.</p>
+    </div>
+    <hr>
+    <div>
+        <h2>http://HOST:55501/api/v1/binary/</h2>
+        <p>Данный ресурс предназначен для сохранения файла в базе данных в бинарном виде.</p>
+        <p>Использует методы POST, OPTIONS</p>
+        <p>В хедере передаем тип контента application/*</p>
+        <p>В body передаем file в формате binary</p>
+    </div>
+    <hr>
+</div>
+{% endblock %}
