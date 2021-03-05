@@ -1,6 +1,6 @@
 FROM python:3.6
 
-LABEL Has been created by DoroshenkoA.D. for UPItec school
+LABEL Has been created by Doroshenko A.D. for the UPItec school.
 
 RUN mkdir -p /usr/src/Api/
 WORKDIR /usr/src/Api/
