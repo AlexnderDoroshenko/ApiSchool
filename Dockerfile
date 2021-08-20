@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.9.5
 
 LABEL Has been created by Doroshenko A.D. for the UPItec school.
 
