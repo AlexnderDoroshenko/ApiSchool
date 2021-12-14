@@ -23,10 +23,10 @@ SERVER_IP = "0.0.0.0"
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'sSDGFGHHJJ6554HJ56'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', MY_DOMAIN, SERVER_IP]
 
@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'rest_auth',
     'rest_framework',
     'rest_auth.registration',
-
     'djoser',
 ]
 
@@ -68,7 +67,7 @@ ROOT_URLCONF = 'ApiSchool.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["/home/doroshenkoaldm/PycharmProjects/Api/ApiSchool/templates"],
+        'DIRS': [f"{BASE_DIR}/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
