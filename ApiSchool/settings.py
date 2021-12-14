@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_HOSTNAME = socket.gethostname()
 BASE_HOST_IP = socket.gethostbyname(BASE_HOSTNAME)
 MY_DOMAIN = "doroshenko.od.ua"
-SERVER_IP = "172.21.10.48"
+SERVER_IP = "0.0.0.0"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
