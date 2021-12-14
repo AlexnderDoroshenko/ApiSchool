@@ -17,13 +17,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_HOSTNAME = socket.gethostname()
 BASE_HOST_IP = socket.gethostbyname(BASE_HOSTNAME)
 MY_DOMAIN = "doroshenko.od.ua"
-SERVER_IP = "192.168.2.10"
+SERVER_IP = "172.21.10.48"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'sSDGFGHHJJ6554HJ56'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
